@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>[name]- Portfolio</title>
+    <title>Ilona Kauppila - Portfolio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -23,7 +23,7 @@
         <div class="navbar-container">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a href="#home" data-lang="nav-home-title">Etusivu</a>
+              <a href="/" data-lang="nav-home-title">Etusivu</a>
             </li>
             <li class="nav-list-item">
               <a href="#about" data-lang="nav-about-title">Minusta</a>
@@ -52,6 +52,8 @@
       </section>
     </header>
 
+    <button onclick="topFunction()" id="top-button" title="Takaisin ylös" data-lang="top-button">Takaisin ylös ▲</button>
+
     <section id="about">
       <div class="about-container">
         <div class="about-image-container">
@@ -77,11 +79,13 @@
         <div class="about-text-container">
           <h2 class="about-title" data-lang="about-title">Minusta</h2>
           <p class="about-text" data-lang="about-text">
-            Olen frontend-kehittäjä, jolla on intohimo luoda kauniita ja
-            toimivia verkkosivustoja. Minulla on kokemusta HTML:stä, CSS:stä ja
-            JavaScriptistä, ja haluan aina oppia lisää. Etsin tällä hetkellä
-            uusia mahdollisuuksia työskennellä jännittävien projektien parissa
-            mahtavan tiimin kanssa.
+            Olen Etelä-Pohjanmaalta kotoisin oleva tällä hetkellä kissani kanssa Turussa asusteleva uraansa aloitteleva ohjelmistokehittäjä. Kiinnostus kaikenlaisiin tietokonejuttuihin on ollut läsnä lapsesta saakka vahvasti harrastuksien osalta. Muita aloja matkan varrella kokeiltuani ja mutkien kautta tietojenkäsittelyn tradenomiopintoihin Turun ammattikorkeakoulussa päädyttyäni on löytynyt intohimo ja varmuus, että tätä haluan työkseni tehdä!
+            <br />
+            <br />
+            Opintojen myötä olen saanut arvokasta kokemusta eri teknologioista sekä projektinhallinnasta ja projektityöskentelystä. Olen toiminut opiskelijaprojekteissa mm. projektipäällikkönä, frontend-kehittäjänä ja QA-testaajana sekä suunnittelemassa ja järjestämässä nettisivuston käyttäjätestausta. Frontend-kehitys on tällä hetkellä vahvin ja minua eniten kiinnostava ala, mutta olen motivoitunut oppimaan muistakin ohjelmistokehityksen ja IT-alan osa-alueista ja kehittymään fullstack-kehittäjäksi.
+            <br />
+            <br />
+            Luonteeltani olen rauhallinen ja kärsivällinen, ja tulen hyvin toimeen erilaisten ihmisten kanssa sekä työssä että vapaa-ajalla. Harrastuksiini kuuluvat videopelit, digitaalinen piirtäminen sekä käsityöt.
           </p>
         </div>
       </div>
@@ -134,101 +138,156 @@
       <div class="projects-container">
         <h2 class="projects-title" data-lang="projects-title">Projektit</h2>
         <div class="projects-grid">
-          <div class="slide">
-            <img src="https://via.placeholder.com/300" alt="Project 1" class="slide-image" />
-            <h3 class="slide-title" data-lang="project-title-1">TurkuAMK Datu+ -innovaatioprojekti</h3>
-            <h4 class="slide-subtitle" data-lang="project-subtitle-1">Kehittäjä/dokumentaatiovastaava</h4>
-            <h5 class="slide-date">08/2024-12/2024</h5>
-            <p class="slide-text" data-lang="project-description-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="project">
+            <div class="project-image-container">
+            <img src="images/turkuamklogo.jpg" alt="Project 1" class="project-image" />
           </div>
-        <div class="slide">
+            <h3 class="project-title" data-lang="project-title-1">Datu+ -innovaatioprojekti</h3>
+            <h4 class="project-subtitle" data-lang="project-subtitle-1">Kehittäjä/dokumentaatiovastaava</h4>
+            <h5 class="project-date">08/2024-12/2024</h5>
+            <p class="project-text" data-lang="project-description-1">Työskentelin syksyllä 2024 TurkuAMK:n Datu+-hankkeessa osana Innovaatioprojekti-kurssia. Projektin tarkoituksena oli parannella olemassaolevaa tietokantaa sekä luoda visualisointeja datasta käyttäen Elasticsearchia ja Kibanaa. Olin projektissa kehittäjänä ja vastasin projektin dokumentaatiosta. </p> 
+            <p class="project-detail"><h4 class="project-detail-title" data-lang="project-detail-title">Keskeiset työkalut:</h4> Microsoft Excel, Elasticsearch/Kibana</p>
+            <p><a href="https://www.turkuamk.fi/projekti/datu-database-on-turku-underpinning-and-energy-pile-projects/" class="project-link" data-lang="project-1-moreinfo">Hankkeesta ➤</a></p>
+          </div>
+        <div class="project">
+          <div class="project-image-container">
           <img
-            src="https://via.placeholder.com/300"
+            src="images/theFIRMAlogo.png"
             alt="Project 2"
-            class="slide-image"
+            class="project-image"
           />
-          <h3 class="slide-title" data-lang="project-title-2">
-            theFIRMA - Vertti
+        </div>
+          <h3 class="project-title" data-lang="project-title-2">
+            Vertti
           </h3>
-          <h4 class="slide-subtitle" data-lang="project-subtitle-2">
+          <h4 class="project-subtitle" data-lang="project-subtitle-2">
             Frontend-kehittäjä
           </h4>
-          <h5 class="slide-date">06/2024-11/2024</h5>
-          <p class="slide-text" data-lang="project-description-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h5 class="project-date">06/2024-11/2024</h5>
+          <p class="project-text" data-lang="project-description-2">
+            Olin mukana TurkuAMK:n theFIRMAn Vertti-projektissa frontend-kehittäjänä. Tehtäviini kuului käännöstoiminnallisuuden lisääminen verkkosovelluksen käyttöliittymään ja sen yhteensopivuus sovelluksen backendin kanssa.
           </p>
+          <p class="project-detail"><h4 class="project-detail-title" data-lang="project-detail-title">Keskeiset työkalut:</h4>Javascript, HTML, Node.js</p>
         </div>
-        <div class="slide">
+        <div class="project">
+          <div class="project-image-container">
           <img
-            src="https://via.placeholder.com/300"
+            src="images/theFIRMAlogo.png"
             alt="Project 3"
-            class="slide-image"
+            class="project-image"
           />
-          <h3 class="slide-title" data-lang="project-title-3">
-            theFIRMA - TurkuAMK:n uuden nettisivuston käyttäjätestaus
+        </div>
+          <h3 class="project-title" data-lang="project-title-3">
+            TurkuAMK Käyttäjätestaus
           </h3>
-          <h4 class="slide-subtitle" data-lang="project-subtitle-3">
+          <h4 class="project-subtitle" data-lang="project-subtitle-3">
             Projektipäällikkö
           </h4>
-          <h5 class="slide-date">08/2024-10/2024</h5>
-          <p class="slide-text" data-lang="project-description-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h5 class="project-date">08/2024-10/2024</h5>
+          <p class="project-text" data-lang="project-description-3">
+            Olin syksyllä 2024 projektipäällikkönä TurkuAMK:n theFIRMA:n projektissa, jonka tarkoituksena oli suunnitella ja toteuttaa käyttäjätestaus TurkuAMK:n uudelle nettisivustolle. Projektipäällikön tehtävien lisäksi tehtäviini kuului käyttäjätestauksen osalta organisointi (testaajien rekrytointi, aikataulutus) ja toteutus (testauksen suunnittelu, testaajien ohjeistus) osana projektitiimiä.
           </p>
         </div>
-        <div class="slide">
+        <div class="project">
+          <div class="project-image-container">
           <img
-            src="https://via.placeholder.com/300"
+            src="images/turkuamklogo.jpg"
             alt="Project 4"
-            class="slide-image"
+            class="project-image"
           />
-          <h3 class="slide-title" data-lang="project-title-4">
-            TurkuAMK - ARPA/SafeSea-hanke
+        </div>
+          <h3 class="project-title" data-lang="project-title-4">
+            ARPA/SafeSea-hanke
           </h3>
-          <h4 class="slide-subtitle" data-lang="project-subtitle-4">
+          <h4 class="project-subtitle" data-lang="project-subtitle-4">
             Kehittäjä (työharjoittelu)
           </h4>
-          <h5 class="slide-date">09/2023-05/2024</h5>
-          <p class="slide-text" data-lang="project-description-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h5 class="project-date">09/2023-05/2024</h5>
+          <p class="project-text" data-lang="project-description-4">
+            Olin osana TurkuAMK:n Wireless Communications and Cybersecurity -tutkimusryhmää työharjoittelijana kehittämässä ARPA- ja SafeSea -hankkeiden data-alustaa. Tehtäviini kuului mm. verkkopalvelimien/rajapintojen ja järjestelmän datahallinnan työkalujen ohjelmointi sekä järjestelmän käyttöliittymän kehittäminen. <br /> <br />
           </p>
+          <p class="project-detail"><h4 class="project-detail-title" data-lang="project-detail-title">Keskeiset työkalut:</h4>Python, Flask, PostgreSQL, Apache Pulsar, Javascript, Ubuntu, Virtualbox</p>
+          <p><a href="https://www.turkuamk.fi/tutkimusryhmat/wireless-communications-and-cybersecurity/" class="project-link" data-lang="project-4-moreinfo">Tutkimusryhmästä ➤</a></p>
         </div>
-        <div class="slide">
+        <div class="project">
+          <div class="project-image-container">
           <img
-            src="https://via.placeholder.com/300"
+            src="images/theFIRMAlogo.png"
             alt="Project 5"
-            class="slide-image"
+            class="project-image"
           />
-          <h3 class="slide-title" data-lang="project-title-5">
-            theFIRMA - QA-tiimi
+        </div>
+          <h3 class="project-title" data-lang="project-title-5">
+            QA-tiimi
           </h3>
-          <h4 class="slide-subtitle" data-lang="project-subtitle-5">
+          <h4 class="project-subtitle" data-lang="project-subtitle-5">
             Testaaja/auditoija
           </h4>
-          <h5 class="slide-date">09/2023-12/2023</h5>
-          <p class="slide-text" data-lang="project-description-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h5 class="project-date">09/2023-12/2023</h5>
+          <p class="project-text" data-lang="project-description-5">
+            Olin osana TurkuAMK:n theFIRMAn QA-tiimiä syksyllä 2023. Tehtäviini kuului muiden projektien testaus ja auditointi.
           </p>
         </div>
-        <div class="slide">
+        <div class="project">
+          <div class="project-image-container">
           <img
-            src="https://via.placeholder.com/300"
+            src="images/turkuamklogo.jpg"
             alt="Project 6"
-            class="slide-image"
+            class="project-image"
           />
-          <h3 class="slide-title" data-lang="project-title-6">
-            TurkuAMK - ISMO-projekti
+        </div>
+          <h3 class="project-title" data-lang="project-title-6">
+            ARPA/SafeSea-hanke
           </h3>
-          <h4 class="slide-subtitle" data-lang="project-subtitle-6">
+          <h4 class="project-subtitle" data-lang="project-subtitle-6">
             Kehittäjä (työharjoittelu)
           </h4>
-          <h5 class="slide-date">05/2023-06/2023</h5>
-          <p class="slide-text" data-lang="project-description-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h5 class="project-date">05/2023-06/2023</h5>
+          <p class="project-text" data-lang="project-description-4">
+            Olin kesällä 2023 osana TurkuAMK:n Wireless Communications and Cybersecurity -tutkimusryhmää työharjoittelijana kehittämässä datan vastaanottoon, käsittelyyn ja tallennukseen liittyviä mikropalveluita TurkuAMK:n ISMO (Intelligent and Sustainable Stormwater Management) -hankkeen data-alustalle. <br /> <br />
           </p>
+          <p class="project-detail"><h4 class="project-detail-title" data-lang="project-detail-title">Keskeiset työkalut:</h4>Ubuntu, PostgreSQL, InfluxDB, Grafana, Telegraf</p>
+          <p><a href="https://www.turkuamk.fi/projekti/ismo-intelligent-and-sustainable-stormwater-management-2/" class="project-link" data-lang="project-6-moreinfo">Hankkeesta ➤</a></p>
         </div>
       </div>
     </section>
 
+    <section id="contact">
+      <div class="contact-container">
+        <h2 class="contact-title" data-lang="contact-title">Ota yhteyttä</h2>
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" data-lang="contact-name">Nimi</label>
+              <input type="text" id="name" name="name" />
+              <label for="email" data-lang="contact-email">Sähköposti</label>
+              <input type="email" id="email" name="email" />
+              <label for="message" data-lang="contact-message">Viesti</label>
+              <textarea id="message" name="message"></textarea>
+              <button type="submit" data-lang="contact-send">Lähetä</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-text">
+          <p data-lang="footer-text">© Ilona Kauppila 2024</p>
+        </div>
+      </div>
+
+    <script type="text/javascript">     (function () {
+        emailjs.init("lsG8cQT-sskFaniMe");
+      })();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
